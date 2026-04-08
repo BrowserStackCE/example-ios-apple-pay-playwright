@@ -1,0 +1,19 @@
+{
+  "name": "node-js-playwright-browserstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sample-test": "npx browserstack-node-sdk playwright test --config=./playwright.config.js",
+    "sample-nonsdk-test": "npx playwright test --config=./playwright.non-sdk.config.js --project='safari@iPhone 15:17.3@browserstack-mobile'",
+    "sample-local-test": "npx browserstack-node-sdk playwright test --config=./playwright.local.config.js",
+    "postinstall": "npm update browserstack-node-sdk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "browserstack-node-sdk": "1.50.2"
+  }
+}
